@@ -1,0 +1,43 @@
+
+/* Proprietà per l'effetto typing */
+.typing{
+    overflow: hidden; /* Permette di nascondere alla destra del cursore*/
+    border-right: .15em solid var(--flax); /* Il bordo destro funge da cursore */
+    white-space: nowrap; /* Mantiene il testo sulla stessa linea */
+}
+  
+/* Effetto del cursore del typing*/
+@keyframes blink-caret {
+    from, to { border-color: transparent } 
+    50% { border-color: var(--flax) }
+}
+
+/*
+NOTA:
+Per eseguire l'effetto di typing su un elemento occorre:
+
+    - Collegare questo file css in html;
+
+    - Aggiungere la classe .typing all'elemento desiderato;
+    
+    - Aggiungere le seguenti proprietà all'elemento:
+        
+        letter-spacing: --spaziatura;   //Rende migliore l'effetto di typing
+        animation: 
+        typing --durata steps(--passi, end),
+        blink-caret .5s step-end infinite;  // In loop infinito eseguo blink-caret in uno step di .5s
+
+      dove --durata, --passi e --spaziatura vanno sostituiti
+      con i valori desiderati;
+    
+    - Aggiungere il seguente keyframe:
+
+        @keyframes typing {
+        from { width: 0 }
+        to { width: --n }
+
+      che realizza l'effetto typing: aumento la larghezza dell'elemento
+      da 0 a --n pixels (specificare il valore desiderato).
+
+}
+*/

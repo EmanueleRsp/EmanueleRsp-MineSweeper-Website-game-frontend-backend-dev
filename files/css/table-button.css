@@ -1,0 +1,28 @@
+
+.table-scroll-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-scroll-btn>*{
+    cursor: pointer;
+    height: 2.3rem;
+    margin: .5rem;
+    font-size: 1rem;
+    border-radius: 50%;
+    color: var(--light-yellow);
+    background-color: var(--cal-poly-green);
+    border: 0.1rem solid var(--hunter-green);
+    box-shadow: 2px 2px 0 var(--hunter-green);
+    border-radius: 0.5rem;
+}
+
+.table-scroll-btn>*:hover {
+    transition: all .1s ease-in;
+}
+
+.table-scroll-btn>*:active {
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px 0 var(--hunter-green);
+}

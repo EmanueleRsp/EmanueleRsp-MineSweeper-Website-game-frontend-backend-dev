@@ -1,0 +1,329 @@
+
+/* Video di sfondo */
+.logo{
+    position: absolute;
+    z-index: -1;
+    width: 20rem;
+}
+
+.logo.first{
+    top: 47%;
+    left: 70%;
+    transform: rotate(61deg);
+}
+
+.logo.second{
+    top: 46%;
+    left: 6%;
+    transform: rotate(100deg) scale(0.8);
+}
+
+.logo.third{
+    top: 16%;
+    left: 62%;
+    transform: rotate(297deg) scale(0.9);
+}
+
+.card-box.x1 .logo{
+    position: absolute;
+    transform: scale(.7) rotate(174deg);
+    left: -88%;
+    top: -41%;
+}
+
+.card-box.x2 .logo{
+    position: absolute;
+    transform: scale(.7) rotate(215deg);
+    left: -84%;
+    top: -130%;
+}
+
+.home{
+    margin: 0;
+}
+
+.home-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-title .typing{
+    font-size: 9rem;
+    color: var(--cal-poly-green);
+    letter-spacing: .15em; /* Rende migliore l'effetto di typing */
+    animation: 
+      typing 3s steps(30, end),
+      blink-caret .5s step-end infinite;
+}
+
+/* Effetto typing */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+.home-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+h2{
+    color: var(--cal-poly-green);
+    margin-bottom: 0;
+}
+
+.title-box{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.page{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    margin-bottom: 3rem;
+    /* transform: translateY(10%); */
+}
+
+.page.title{
+    height: 100vh;
+    transform: none;
+}
+
+
+.scroll{
+
+    transform: translateY(20%);
+    transition: all 2s ease;
+    box-shadow: 0rem 1rem 4rem 7rem var(--cambridge-blue);
+    background-color: var(--cambridge-blue);
+}
+
+.show{
+    transform: translateY(10%);
+}
+
+
+.card{
+    width: 90px;
+    height: 120px;
+    perspective: 1000px;
+    animation: appear 1.5s ease-in-out .1s;
+}
+
+@keyframes appear {
+    from { transform: scale(0) }
+    to { transform: scale(1) }
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+
+    width: 100%;  
+    height: 100%;
+    border-radius: 20px;
+    padding: 1rem;
+    background-color: var(--flax);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    font-size: 4rem;
+
+    backface-visibility: hidden;
+}
+  
+.card-back {
+    transform: rotateY(180deg);
+}
+
+video{
+    width: 9rem;
+}
+
+/* .card-box{
+    z-index: -2;
+} */
+
+.card-box.x1{
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-box.x2{
+    position: absolute;
+    bottom: 15%;
+    right: 40%;
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container{
+    width: 90%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.slider-title{
+    display: flex;
+    font-size: 1.6rem;
+    border-bottom: 0.2rem solid var(--cal-poly-green);
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+
+
+.img-slider{
+    height: 500px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.img-slider .slide{
+    z-index: 1;
+    position: absolute;
+    clip-path: circle(0% at 50% 0%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    min-width: 300px;
+}
+
+.img-slider .slide.risalto{
+    clip-path: circle(150% at 50% 0%);
+    transition: clip-path 1.5s ease-out;
+    position: inherit;
+}
+
+.img-slider .slide img{
+    z-index: 1;
+    width: 100%;
+    min-width: 500px;
+    border-radius: 5px;
+    max-width: 800px;
+}
+
+.img-slider .slide .info{
+    padding: 15px 30px;
+    margin: 15px 15px;
+    background-color: var(--light-yellow);
+    border-radius: 4px;
+    max-width: 30%;
+    color: var(--cal-poly-green);
+}
+
+.img-slider.s2 .slide .info{
+    bottom: 6px;
+}
+
+h3{
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin: auto;
+    margin-left: 0;
+}
+
+.img-slider .slide .info p{
+    font-size: 16px;
+    padding: 10px;
+}
+
+.home .navigation{
+    display: flex;
+}
+
+.home .navigation .btn{
+    background-color: var(--cal-poly-green);
+    opacity: .5;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.home .navigation .btn.risalto{
+    opacity: 1;
+    transition: opacity .5s ease;
+}
+
+
+@media (max-width: 1450px) {
+
+    .img-slider{
+        height: 650px;
+    }
+
+    .img-slider .slide{
+        flex-direction: column;
+    }
+
+    .img-slider .slide .info{
+        max-width: none;
+    }
+}
+
+@media (max-width: 1300px) {
+    .page.title{
+        transform: scale(.8);
+    }
+}
+
+@media (max-width: 1000px) {
+    .page.title{
+        transform: scale(.7);
+    }
+}
+
+@media (max-width: 850px) {
+    .page.title{
+        transform: scale(.5);
+    }
+
+}
