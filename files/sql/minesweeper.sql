@@ -1,10 +1,10 @@
 -- Progettazione Web 
-DROP DATABASE if exists Respino_616704; 
-CREATE DATABASE Respino_616704; 
-USE Respino_616704; 
+DROP DATABASE if exists minesweeper; 
+CREATE DATABASE minesweeper; 
+USE minesweeper; 
 -- MySQL dump 10.13  Distrib 5.7.28, for Win64 (x86_64)
 --
--- Host: localhost    Database: Respino_616704
+-- Host: localhost    Database: minesweeper
 -- ------------------------------------------------------
 -- Server version	5.7.28
 
@@ -167,7 +167,7 @@ CREATE TABLE `utente` (
 
 LOCK TABLES `utente` WRITE;
 /*!40000 ALTER TABLE `utente` DISABLE KEYS */;
-INSERT INTO `utente` VALUES ('ElBarto','$2y$10$DUbRkjaGKsF19zdALpSlKuxYd6ZoU/wIHSjmM/pRk6bLZSsi75pp6','elbarto@gmail.com','$2y$10$/AUU8VQVx/TQeiItmj4m1eW3dV7drbw7V2OMjrAFeiZjHZHgt.y3W','$2y$10$cy5ihs4MN1bOZtifyWSoB.zSB68oXfdmq8WjRKJWImMC4p8HRE3by'),('ema','$2y$10$2FyvwcVXSqI6HHHqR.mqmemsUruZ9eaC.0OZn7fDeGSL43i0jlzQ2','ema@ema.ema','$2y$10$GzvIiO6tPMRr1n3K9Vxy1OjqIaFASQ7jNDvJ8Sn84hw5UmpKlBkoq','$2y$10$drpYglAvkp.4JJSuFIWfWeZak9rccPXTW/zxKxkag5xmLJFVR8T2C'),('LeBonWski','$2y$10$5G4pLbX0EBVG2TVyls/YC.mYFAPIzlnk9I2EMY.QDYoJL8CVaodoq','tommasofalaschi02@gmail.com','$2y$10$GzvIiO6tPMRr1n3K9Vxy1OjqIaFASQ7jNDvJ8Sn84hw5UmpKlBkoq','$2y$10$9LFsZJfKApSRNS69LNYqmurJDMcZGGiX0QywcnmXRoQRRQ4cybfg.'),('martifabia','$2y$10$q7qsppOdrFTLnhxcKbmDtOiGf37Vl4Xlei0z1rwz2BH/8ZVAcsFVW','marti@gmail.it','$2y$10$GzvIiO6tPMRr1n3K9Vxy1OjqIaFASQ7jNDvJ8Sn84hw5UmpKlBkoq','$2y$10$OKSbG/cRsyltemKAwyoeJe4oNIw0GQRMV/L/qDW74GizccHk/.QmK'),('Ross','$2y$10$E8Inb9TI8zHJnJ89NNPcWOlf5AAOeh.n9ohomrnU/yO2geunx8MQe','rossana@gmail.com','$2y$10$GzvIiO6tPMRr1n3K9Vxy1OjqIaFASQ7jNDvJ8Sn84hw5UmpKlBkoq','$2y$10$9LFsZJfKApSRNS69LNYqmurJDMcZGGiX0QywcnmXRoQRRQ4cybfg.');
+INSERT INTO `utente` VALUES ('ElBarto','$2y$10$DUbRkjaGKsF19zdALpSlKuxYd6ZoU/wIHSjmM/pRk6bLZSsi75pp6','elbarto@gmail.com','$2y$10$/AUU8VQVx/TQeiItmj4m1eW3dV7drbw7V2OMjrAFeiZjHZHgt.y3W','$2y$10$cy5ihs4MN1bOZtifyWSoB.zSB68oXfdmq8WjRKJWImMC4p8HRE3by'),('ema','$2y$10$2FyvwcVXSqI6HHHqR.mqmemsUruZ9eaC.0OZn7fDeGSL43i0jlzQ2','ema@ema.ema','$2y$10$GzvIiO6tPMRr1n3K9Vxy1OjqIaFASQ7jNDvJ8Sn84hw5UmpKlBkoq','$2y$10$drpYglAvkp.4JJSuFIWfWeZak9rccPXTW/zxKxkag5xmLJFVR8T2C'),('LeBonWski','$2y$10$5G4pLbX0EBVG2TVyls/YC.mYFAPIzlnk9I2EMY.QDYoJL8CVaodoq','fala@gmail.com','$2y$10$GzvIiO6tPMRr1n3K9Vxy1OjqIaFASQ7jNDvJ8Sn84hw5UmpKlBkoq','$2y$10$9LFsZJfKApSRNS69LNYqmurJDMcZGGiX0QywcnmXRoQRRQ4cybfg.'),('martifabia','$2y$10$q7qsppOdrFTLnhxcKbmDtOiGf37Vl4Xlei0z1rwz2BH/8ZVAcsFVW','marti@gmail.it','$2y$10$GzvIiO6tPMRr1n3K9Vxy1OjqIaFASQ7jNDvJ8Sn84hw5UmpKlBkoq','$2y$10$OKSbG/cRsyltemKAwyoeJe4oNIw0GQRMV/L/qDW74GizccHk/.QmK'),('Ross','$2y$10$E8Inb9TI8zHJnJ89NNPcWOlf5AAOeh.n9ohomrnU/yO2geunx8MQe','rossana@gmail.com','$2y$10$GzvIiO6tPMRr1n3K9Vxy1OjqIaFASQ7jNDvJ8Sn84hw5UmpKlBkoq','$2y$10$9LFsZJfKApSRNS69LNYqmurJDMcZGGiX0QywcnmXRoQRRQ4cybfg.');
 /*!40000 ALTER TABLE `utente` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;

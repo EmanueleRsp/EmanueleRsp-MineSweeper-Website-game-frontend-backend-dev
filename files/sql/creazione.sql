@@ -1,5 +1,5 @@
 -- ==================================================================== --
---       SCRIPT PER LA CREAZIONE DEL DATABASE 'respino_616704'  		--
+--       SCRIPT PER LA CREAZIONE DEL DATABASE 'minesweeper'  		--
 -- ==================================================================== --
 -- 
 -- DESCRIZIONE STRUTTURA E COMPOSIZIONE
@@ -26,9 +26,9 @@
 
 
 SET FOREIGN_KEY_CHECKS = 0;
-DROP DATABASE IF EXISTS respino_616704;
-CREATE DATABASE respino_616704; 
-USE respino_616704;
+DROP DATABASE IF EXISTS minesweeper;
+CREATE DATABASE minesweeper; 
+USE minesweeper;
 
 
 
