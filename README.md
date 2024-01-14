@@ -74,7 +74,7 @@ Now, you have to **import** the database. To do that, you have to:
 6. Click on the "Choose file" button and select the [`files\sql\creazione.sql`](files\sql\creazione.sql) file;
 7. Click on the "Go" button.
 
-Now you can **start** the game:
+Finally, you can **start** the game:
 1. Open the XAMPP Control Panel;
 2. Start the Apache and MySQL services;
 3. Open your browser and go to [http://localhost/](http://localhost/).
