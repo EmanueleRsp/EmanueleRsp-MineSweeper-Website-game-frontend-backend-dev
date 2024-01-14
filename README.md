@@ -42,13 +42,13 @@ The project is structured in the following way:
 - **`files/`** contains all the files used by the application, divided by type. In particular:
   - **`files/php/`** folder contains:
     - the PHP files used to implement **web pages** themselves;
-    - [`data/php/redirector/`](files/php/redirector) folder contains the PHP files used to **redirect** the user requests to the correct manager;
-    - [`data/php/manager/`](files/php/manager) folder contains the PHP files used to **manage** the user requests.
+    - [`files/php/redirector/`](files/php/redirector) folder contains the PHP files used to **redirect** the user requests to the correct manager;
+    - [`files/php/manager/`](files/php/manager) folder contains the PHP files used to **manage** the user requests.
   - **`files/json/`** contains:
-    - [`files\json\DBCredentials.json`](files\json\DBCredentials.json) json file used to store **database credentials**;
+    - [`files/json/DBCredentials.json`](files/json/DBCredentials.json) json file used to store **database credentials**;
   - **`files/sql/`** contains:
-    - [`files\sql\creazione.sql`](files\sql\creazione.sql) SQL file used to **create** the database;
-    - [`files\sql\minesweeper.sql`](files\sql\minesweeper.sql) SQL file used to **populate** the database.
+    - [`files/sql/creazione.sql`](files/sql/creazione.sql) SQL file used to **create** the database;
+    - [`files/sql/minesweeper.sql`](files/sql/minesweeper.sql) SQL file used to **populate** the database.
 - **`esportaDB.sh`** is the **shell script** used to export the database, provided by the professor.
 - **`specifiche.pdf`** is the **file** containing the main guidelines of the project, provided by the professor.
 - **`README.md`** is the **file** you are reading right now :).
