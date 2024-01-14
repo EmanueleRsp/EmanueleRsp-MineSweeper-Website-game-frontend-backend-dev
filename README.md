@@ -87,5 +87,5 @@ Now you can **start** the game:
 
 The project was evaluated with a **score of 30/30 with honours**.
 
-The professor really appretiated the **creativity** of the project, in particular the **design** of the website and the **implementation** of the game.
+The professor really appretiated the **creativity** of the project, in particular the **design** of the website and the **implementation** of the game. He also liked the **modularity** of PHP code.
  
