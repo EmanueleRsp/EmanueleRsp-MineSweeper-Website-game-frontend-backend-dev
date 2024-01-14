@@ -1,0 +1,270 @@
+
+body{
+    height: 97vh;
+    display: flex;
+    align-items: center;
+
+    background-color: var(--light-yellow);
+}
+
+#control{
+    position: fixed;
+    top: 57px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    max-width: min-content;
+    padding: 2rem;
+    background-color: var(--flax);
+    border-right: 0.2rem solid var(--jasmine);
+    color: var(--cal-poly-green);
+    z-index: 1;
+}
+
+#control>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem 0;
+    font-size: 1.3rem;
+}
+
+#control ion-icon{
+    width: 2rem;
+    height: 2rem;
+}
+
+#control span{
+    text-align: center;
+}
+
+#board{
+    /* border: 5px solid var(--cal-poly-green); */
+    max-width: min-content;
+    margin: auto;
+    padding: 2rem;
+    margin-top: 3rem;
+    margin-left: 10rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transform-origin: 2rem 2rem;
+}
+
+#board span{
+    display: flex;
+}
+
+#board div{
+    background-color: var(--moss-green);
+    width: 48px;
+    height: 48px;
+    border: 1px solid var(--hunter-green);
+    margin: 1px;
+
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease;
+}
+
+#board div:hover{
+    background-color: var(--cal-poly-green);
+}
+
+.clicked{
+    background-color: var(--cambridge-blue-2) !important;
+}
+
+.x1{
+    color: blue;
+}
+
+.x2{
+    color: green;
+}
+
+.x3{
+    color: red;
+}
+
+.x4{
+    color: navy;
+}
+
+.x5{
+    color: brown;
+}
+
+.x6{
+    color: teal;
+}
+
+.x7{
+    color: black;
+}
+
+.x8{
+    color: gray;
+}
+
+#btn-flag{
+    margin-bottom: 6rem;
+    width: 5rem;
+    height: 3rem;
+    font-size: 1.7rem;
+    background-color: lightgray;
+    transition: .2s ease;
+    border-radius: 1rem;
+    border-top: 0.1rem solid whitesmoke;
+    border-left: 0.1rem solid whitesmoke;
+    border-right: 0.1rem solid darkgray;
+    border-bottom: 0.1rem solid darkgray;
+}
+
+#btn-flag:hover, #buttons button:hover{
+    box-shadow: 0em 0em 10px var(--cal-poly-green);
+    transform: scale(1.1);
+}
+
+ion-icon[id|='zoom']{
+    cursor: pointer;
+}
+
+#btn-menu{
+    color: var(--cal-poly-green);
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    top: 5rem;
+    right: 2rem;
+    z-index: 2;
+    background-color: var(--flax);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#game-menu-box{
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+}
+
+#game-menu-box.window{
+    z-index: 2;
+}
+
+#game-menu{
+    min-width: 37rem;
+    color: var(--cal-poly-green);
+    transform: scale(0);
+    transition: transform .3s ease-in;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--flax);
+    border-radius: 10px;
+    border: 0.1rem solid var(--jasmine);
+}
+
+#game-menu.window{
+    transform: scale(1);
+}
+
+#result{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+}
+
+#info{
+    text-align: center;
+    margin: 0.5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#stats{
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 1rem;
+}
+
+#stats span{
+    font-weight: 500;
+    margin: 0.2rem;
+    margin-right: 1rem;
+}
+
+#buttons{
+    margin: 1rem;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#buttons button{
+    background-color: var(--cal-poly-green);
+    font-size: 1rem;
+    color: var(--light-yellow);
+    font-weight: 500;
+    margin: .5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    outline: none;
+    transition: .3s ease;
+}
+
+#time{
+    transition: all .5s ease-in;
+}
+
+.game-notify{
+    position: fixed;
+    top: 80px;
+    right: 80px;
+
+    min-width: min-content;
+    max-width: 40rem;
+    background-color: lightcoral;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 20px;
+    transition: transform 0.5s ease-in;
+    transform: scale(0);
+}
+
+.game-notify.notified{
+    transform: scale(1);
+}
+
+.game-notify .notify-title{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: black;
+}
+
+.game-notify .notify-text {
+    max-width: 20rem;
+    color: black;
+    text-align: center;
+}
