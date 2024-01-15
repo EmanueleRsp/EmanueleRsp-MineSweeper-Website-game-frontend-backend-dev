@@ -8,8 +8,6 @@ The project assignment was to develop both the frontend and the backend of a web
   - [Final evaluation and comments](#final-evaluation-and-comments)
 
 
----
-
 ## Documentation
 
 > _This project was developed during "Web Design" course for the Bachelor's degree in Computer Engineering at the University of Pisa, so inner workings and implementation details are described in **italian**._
@@ -34,8 +32,6 @@ One of the main requirements was to **validate** the HTML and CSS code of the we
     </a>
 </p>
 
----
-
 ## Project structure
 
 The project is structured in the following way:
@@ -53,9 +49,10 @@ The project is structured in the following way:
 - **`specifiche.pdf`** is the **file** containing the main guidelines of the project, provided by the professor.
 - **`README.md`** is the **file** you are reading right now :).
 
----
 
 ## Setup
+
+You can download the latest zip file released from [here](https://github.com/EmanueleRsp/MineSweeper-Website-game/releases). 
 
 For this project I used **XAMPP** to simplify everithing. In particular, I used **Apache** as web server and **MySQL** as database server.
 
@@ -81,7 +78,6 @@ Finally, you can **start** the game:
 
 **Enjoy!** 🌼
 
----
 
 ## Final evaluation and comments
 
