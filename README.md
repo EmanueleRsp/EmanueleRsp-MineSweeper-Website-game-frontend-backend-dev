@@ -7,6 +7,7 @@ The project assignment was to develop both the frontend and the backend of a web
   - [Setup](#setup)
   - [Final evaluation and comments](#final-evaluation-and-comments)
 
+For any issue or question, please don't hesitate to contact me!
 
 ## Documentation
 
