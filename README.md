@@ -1,5 +1,8 @@
 # MineSweeper: frontend and backend development of a website game
 
+[![GitHub Release](https://img.shields.io/github/release/EmanueleRsp/MineSweeper-Website-game?style=flat)](https://github.com/EmanueleRsp/MineSweeper-Website-game/releases) [![GitHub license](https://img.shields.io/github/license/EmanueleRsp/MineSweeper-Website-game?style=flat)](https://github.com/EmanueleRsp/MineSweeper-Website-game/blob/main/LICENSE) 
+[![Stars](https://img.shields.io/github/stars/EmanueleRsp/MineSweeper-Website-game?style=social&label=Stars)](https://github.com/EmanueleRsp/MineSweeper-Website-game/stargazers) 
+
 The project assignment was to develop both the frontend and the backend of a website game, in particular the game chosen was **MineSweeper**. The project was developed using **HTML**, **CSS**, **JavaScript**, **PHP** and **MySQL**.
 - [MineSweeper: frontend and backend development of a website game](#minesweeper-frontend-and-backend-development-of-a-website-game)
   - [Documentation](#documentation)
